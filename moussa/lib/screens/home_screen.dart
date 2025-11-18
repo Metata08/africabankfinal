@@ -4,29 +4,24 @@ class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    // Obtenir la hauteur de l'écran pour dimensionner la partie bleue de manière responsive.
+    // Obtenir la hauteur de l'écran 
     final screenHeight = MediaQuery.of(context).size.height;
 
     // Scaffold est l'échafaudage de base de tout écran Material Design.
     return Scaffold(
       // couleur de fond
       backgroundColor: Colors.white,
-      // Le corps de l'application est maintenant enveloppé dans un SingleChildScrollView
-      // pour permettre le défilement lorsque le clavier apparaît.
+      // Le corps avec SingleChildScrollView
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
-            // --- Partie haute de l'application (sans Expanded) ---
+           
             Container(
-              // On lui donne une hauteur fixe, par exemple 40% de l'écran.
+              //40% de l'écran.
               height: screenHeight * 0.4,
               width: double.infinity,
               decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [Color(0xFF154478), Color(0xFF154478)],
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                ),
+               color:  Color(0xFF154478),
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -49,7 +44,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             
-            // --- Partie basse de l'application (sans Expanded) ---
+            // Partie formulaire authentification 
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Column(
