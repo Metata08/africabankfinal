@@ -1,5 +1,5 @@
+import 'package:africabankfinal/widgets/header.dart';
 import 'package:flutter/material.dart';
-import 'package:africa_bank/widgets/header.dart';
 
 class PaymentScreen extends StatelessWidget {
   PaymentScreen({super.key});

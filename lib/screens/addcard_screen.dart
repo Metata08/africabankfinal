@@ -1,4 +1,4 @@
-import 'package:africa_bank/widgets/header.dart';
+import 'package:africabankfinal/widgets/header.dart';
 import 'package:flutter/material.dart';
 
 class AddCardScreen extends StatelessWidget {
@@ -68,7 +68,7 @@ class AddCardScreen extends StatelessWidget {
           ),
           // SizedBox(height: screenHeight * 0.005),
           DropdownButtonFormField<String>(
-            initialValue: initialValue,
+            value: initialValue,
             decoration: InputDecoration(
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(5),

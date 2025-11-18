@@ -85,7 +85,7 @@ class _TransactionSuivantState extends State<TransactionSuivant> {
         title: "Transactions",
         showMenu: false,
         showBack: true,
-        onBack: () => context.go('/'),
+        onBack: () => context.go('/home'),
       ),
 
       body: Column(

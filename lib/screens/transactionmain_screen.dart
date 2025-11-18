@@ -1,4 +1,4 @@
-import 'package:africa_bank/widgets/header.dart';
+import 'package:africabankfinal/widgets/header.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -26,7 +26,7 @@ class TransactionHubPage extends StatelessWidget {
               context,
               Icons.swap_horiz,
               "Transfer",
-              "/transaction/transfer",
+              "/transaction_form",
               buttonHeight,
             ),
             SizedBox(height: buttonPadding),
@@ -34,7 +34,7 @@ class TransactionHubPage extends StatelessWidget {
               context,
               Icons.qr_code_scanner,
               "Scan QR",
-              "/transaction/scan",
+              "/transaction_qr",
               buttonHeight,
             ),
             SizedBox(height: buttonPadding),
@@ -42,7 +42,7 @@ class TransactionHubPage extends StatelessWidget {
               context,
               Icons.history,
               "History",
-              "/transaction/history",
+              "/transaction_suivant",
               buttonHeight,
             ),
           ],

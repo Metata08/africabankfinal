@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class TransactionFormScreen extends StatefulWidget {
   const TransactionFormScreen({Key? key}) : super(key: key);
@@ -24,7 +25,8 @@ class _TransactionFormScreenState extends State<TransactionFormScreen> {
         //  icon de navigation de retour dans l'application
         leading: Row(
           children: [
-            const Icon(Icons.chevron_left, color: Colors.white, size: 40,),
+ IconButton(onPressed: () => context.go('/transaction') ,icon: Icon(Icons.chevron_left, color: Colors.white, size: 40,)),
+
           ],
         ),
         title: const Text(

@@ -24,7 +24,7 @@ class _SettingsPageState extends State<SettingsPage> {
         title: "Paramètres",
         showMenu: false,
         showBack: true,
-        onBack: () => context.go('/'),   //  ✔  FINI les erreurs !!
+        onBack: () => context.go('/home'),   //  ✔  FINI les erreurs !!
       ),
 
 

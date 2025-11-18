@@ -1,6 +1,7 @@
+import 'package:africabankfinal/widgets/clavier.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-import '../widgets/clavier.dart';
 
 // L'écran principal de change, StatefulWidget car son contenu change
 class ExchangeScreen extends StatefulWidget {
@@ -91,8 +92,8 @@ class _ExchangeScreenState extends State<ExchangeScreen> {
         elevation: 0,
         leading: Row(
           children: [
-            IconButton(icon: const Icon(Icons.menu, color: Colors.white), onPressed: () {}),
-            const Icon(Icons.chevron_left, color: Colors.white),
+                       IconButton(onPressed: () => context.go('/home') ,icon: Icon(Icons.chevron_left, color: Colors.white, size: 40,)),
+
           ],
         ),
         leadingWidth: 100,

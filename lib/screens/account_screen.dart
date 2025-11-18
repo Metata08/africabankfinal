@@ -1,4 +1,4 @@
-import 'package:africa_bank/widgets/header.dart';
+import 'package:africabankfinal/widgets/header.dart';
 import 'package:flutter/material.dart';
 
 class AccountScreen extends StatelessWidget {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:qr_flutter/qr_flutter.dart'; // Pour générer le code QR
 import 'package:barcode_widget/barcode_widget.dart'; // Pour générer le code-barres
 
@@ -20,7 +21,7 @@ class QrScreen extends StatelessWidget {
         //  icon de navigation de retour dans l'application
         leading: Row(
           children: [
-            const Icon(Icons.chevron_left, color: Colors.white, size: 40,),
+            IconButton(onPressed: () => context.go('/transaction') ,icon: Icon(Icons.chevron_left, color: Colors.white, size: 40,)),
           ],
         ),
         title: const Text(
